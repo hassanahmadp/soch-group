@@ -1,0 +1,23 @@
+$color: (
+    primary-red: #ec2323,
+);
+
+@mixin flex($j,$a) {
+    display: flex;
+    justify-content: $j;
+    align-items: $a;
+}
+
+@mixin idealFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "./header";
