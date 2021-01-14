@@ -39,6 +39,10 @@ ul,
   font-family: "Mukta Mahee", sans-serif;
 }
 
+.brands-para {
+  color: black;
+}
+
 .join-flex p {
   font-size: 16px;
 }
@@ -55,8 +59,20 @@ ul,
   font-weight: 500;
 }
 
+.section1,
+.ourVision,
+.ourJourney,
+.ourBrands,
+.joinUs,
+.sochWorthy,
+.whats-new,
+.actual-footer {
+  padding-left: 14vw;
+  padding-right: 14vw;
+}
+
 header {
-  min-height: 21.25vh;
+  height: 11.25vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,5 +83,145 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 3.75vw;
+}
+
+.burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 14px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+.burger div {
+  background-color: #ec2323;
+  height: 2px;
+  width: 20px;
+}
+
+.burger .line2 {
+  width: 12.5px;
+}
+
+ul.header-menu {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.logo img {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+  height: 100%;
+  width: auto;
+}
+
+section.section1 {
+  position: relative;
+  height: 90vh;
+  width: 100vw;
+}
+
+section.section1 .backDiv {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 76.75vh;
+  width: 53.5vw;
+  background-color: #ec2323;
+}
+
+section.section1 .img-textBox {
+  position: absolute;
+  width: 96.25vw;
+  height: 81.25vh;
+  top: 0;
+  right: 0;
+}
+
+section.section1 .img-textBox img.team {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.textBox {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  color: white;
+  padding-left: 10.37%;
+  padding-top: 28vh;
+}
+
+.textBox img {
+  height: 184px;
+  width: auto;
+}
+
+.textBox p {
+  margin-top: 60px;
+  padding-left: 10vw;
+  max-width: 473px;
+}
+
+@media (max-width: 1300px) {
+  ul.header-menu {
+    width: 60%;
+  }
+  .textBox img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 1000px) {
+  ul.header-menu {
+    display: none;
+  }
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .textBox img {
+    height: 110px;
+  }
+}
+
+@media (max-width: 600px) {
+  .textBox img {
+    height: 80px;
+  }
+}
+
+@media (max-width: 414px) {
+  .textBox img {
+    height: 65px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

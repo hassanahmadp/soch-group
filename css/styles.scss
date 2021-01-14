@@ -1,7 +1,12 @@
-$color: (
+$colors: (
   base: #ec23231a,
   primary-red: #ec2323,
 );
+
+@function color($c) {
+  @return map-get($colors, $c);
+}
+
 
 @mixin flex($j, $a) {
   display: flex;
@@ -53,6 +58,10 @@ ul,
   font-family: "Mukta Mahee", sans-serif;
 }
 
+.brands-para {
+  color: black;
+}
+
 .join-flex p {
   font-size: 16px;
 }
@@ -69,4 +78,21 @@ ul,
   font-weight: 500;
 }
 
+.section1,
+.ourVision,
+.ourJourney,
+.ourBrands,
+.joinUs,
+.sochWorthy,
+.whats-new,
+.actual-footer {
+  padding-left: 14vw;
+  padding-right: 14vw;
+}
+
+
+
 @import "./header";
+
+
+
