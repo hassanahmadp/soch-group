@@ -1,5 +1,6 @@
 $color: (
-    primary-red: #ec2323,
+    base: rgb(236, 35, 35, 0.1),
+    primary-red: #EC2323
 );
 
 @mixin flex($j,$a) {
