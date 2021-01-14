@@ -7,7 +7,6 @@ $colors: (
   @return map-get($colors, $c);
 }
 
-
 @mixin flex($j, $a) {
   display: flex;
   justify-content: $j;
@@ -42,8 +41,13 @@ ul {
   font-weight: 700;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 ul,
-.vision {
+.vision,
+.actual-link {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -90,9 +94,6 @@ ul,
   padding-right: 14vw;
 }
 
-
-
 @import "./header";
-
-
-
+@import "./ourVision";
+@import "./ourJrny";
