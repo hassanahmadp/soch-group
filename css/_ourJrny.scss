@@ -1,0 +1,151 @@
+section.ourJourney {
+  overflow: hidden;
+  position: relative;
+  height: 50rem;
+  width: 100vw;
+  background-color: color(base);
+}
+
+.ourJourney-heading {
+  position: absolute;
+  top: 0;
+  left: 14vw;
+  transform: translateY(-50%);
+  height: 144px;
+  width: auto;
+  z-index: 100;
+}
+
+.twenty20 {
+  height: 160px;
+  width: auto;
+  opacity: 0.1;
+  position: absolute;
+  top: 65px;
+  right: 14vw;
+  z-index: -2;
+}
+
+.redParaDiv {
+  position: absolute;
+  width: 47.3vw;
+  left: 0;
+  top: 12vh;
+  height: 45vh;
+  padding-top: 6.5vh;
+  padding-left: 20.125vw;
+  background-color: color(primary-red);
+  p {
+    color: white;
+    max-width: 370px;
+  }
+}
+
+.mainClock {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 55vh;
+  width: auto;
+}
+
+.shopStore {
+  position: absolute;
+  height: 286px;
+  width: auto;
+  bottom: 10vh;
+  z-index: -1;
+  right: 14vw;
+}
+
+@media (max-width: 970px) {
+  section.ourJourney {
+    height: 60rem;
+    width: 100vw;
+    background-color: color(base);
+  }
+
+  .ourJourney-heading {
+    left: 7vw;
+    height: 100px;
+  }
+
+  .twenty20 {
+    height: 90px;
+    top: 0px;
+    right: 7vw;
+  }
+
+  .redParaDiv {
+    width: 80vw;
+    top: 10vh;
+    padding-top: 4.5vh;
+    padding-left: 10vw;
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .shopStore {
+    height: 380px;
+    width: auto;
+    top: 40vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+
+  .mainClock {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 130%;
+  }
+}
+
+@media (max-width: 600px) {
+  section.ourJourney {
+    height: 50rem;
+    width: 100vw;
+    background-color: color(base);
+  }
+
+  .ourJourney-heading {
+    height: 55px;
+  }
+
+  .twenty20 {
+    height: 40px;
+  }
+
+  .redParaDiv {
+    top: 6vh;
+    padding-top: 4.5vh;
+    padding-left: 10vw;
+    padding-right: 2vw;
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .shopStore {
+    height: 200px;
+    top: 40vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+}
+
+@media (max-width: 350px) {
+  .shopStore {
+    height: 150px;
+  }
+  section.ourJourney {
+    height: 40rem;
+    width: 100vw;
+    background-color: color(base);
+  }
+}
