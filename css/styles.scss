@@ -1,24 +1,72 @@
 $color: (
-    base: rgb(236, 35, 35, 0.1),
-    primary-red: #EC2323
+  base: #ec23231a,
+  primary-red: #ec2323,
 );
 
-@mixin flex($j,$a) {
-    display: flex;
-    justify-content: $j;
-    align-items: $a;
+@mixin flex($j, $a) {
+  display: flex;
+  justify-content: $j;
+  align-items: $a;
 }
 
 @mixin idealFlex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  li {
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+    i {
+      margin-left: 12px;
+    }
+  }
+}
+
+.heading-footer {
+  font-weight: 700;
+}
+
+ul,
+.vision {
+  font-family: "Montserrat", sans-serif;
+}
+
+.section1 .para,
+.ourJourney-para,
+.brands-para,
+.join-para,
+.join-flex p,
+.whats-new-red p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Mukta Mahee", sans-serif;
+}
+
+.join-flex p {
+  font-size: 16px;
+}
+
+.newsLetter input {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Mukta Mahee", sans-serif;
+}
+
+.newsLetter h4 {
+  font-family: "Mukta Mahee", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 @import "./header";
